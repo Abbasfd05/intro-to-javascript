@@ -19,3 +19,12 @@ if (val === 1) {
 }
 
 // val is 3, so 'val is three' will be printed.
+// Global scope
+let friendName = "Burt";
+
+const greet = () => {
+  // Function scope
+  let message = "Hello, " + friendName + "!";
+  console.log(message);
+}
+greet()
